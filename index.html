@@ -15,19 +15,22 @@
 <body>
     <!-- header -->
     <header class="header">
+    
     <div class="container">
+        <div class="header-container">
         <nav class="nav">
         <a href="" class="logo">Web<span class="logo-half">Studio</span></a>
             <ul class="nav-title">
-                <li class="item"><a class="link" href="">Студия</a></li>
+                <li class="item"><a class="link current" href="">Студия</a></li>
                 <li class="item"><a class="link" href="portfolio.html">Портфолио</a></li>
                 <li class="item"><a class="link" href="">Контакты</a></li>
             </ul>
-            <ul class="nav-secondary">
-                <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
         </nav>
+            <ul class="nav-secondary">
+                <li class="item icon"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item icon"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+    </div>
     </div>
     </header>
 
@@ -47,19 +50,39 @@
         <h2 class="visually-hidden">Особенности</h2>
         <ul class="peculiarities">
             <li class="item">
-                <h3 class="text-title">Внимание к деталям</h3>
+                <div class="vector">
+                <svg class="vector-svg" width="65.3px" height="70px">
+                    <use href="./images/symbol-defs.svg#antenna"></use>
+                </svg>
+                </div>
+                <h3 class="text-title spetial">Внимание к деталям</h3>
                 <p class="text">Идейные соображения, а также <br>начало повседневной работы по формированию позиции.</p>
             </li>
             <li class="item">
-                <h3 class="text-title">Пунктуальность</h3>
+                <div class="vector">
+                <svg class="vector-svg" width="66.96px" height="70px">
+                    <use href="./images/symbol-defs.svg#Vector-1"></use>
+                </svg>
+                </div>
+                <h3 class="text-title spetial">Пунктуальность</h3>
                 <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li class="item">
-                <h3 class="text-title">Планирование</h3>
+                <div class="vector">
+                <svg class="vector-svg" width="70px" height="53.69px">
+                    <use href="./images/symbol-defs.svg#Vector-2"></use>
+                </svg>
+                </div>
+                <h3 class="text-title spetial">Планирование</h3>
                 <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li class="item">
-                <h3 class="text-title">Современные технологии</h3>
+                <div class="vector">
+                <svg class="vector-svg" width="54.83px" height="60.66px">
+                    <use href="./images/symbol-defs.svg#astronaut"></use>
+                </svg>
+                </div>
+                <h3 class="text-title spetial">Современные технологии</h3>
                 <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
@@ -88,31 +111,39 @@
         <h2 class="title team">Наша команда</h2>
         <ul class="team-card">
             <li class="item">
+                <div class="shadow-team-card">
                 <img src="images/human1.jpg" alt="сотрудник студии" width="270">
                 <div class="frame">
                     <h3 class="text-title">Игорь Демьяненко</h3>
                     <p class="text">Product Designer</p>
                 </div>
+                </div>
             </li>
             <li class="item">
+                <div class="shadow-team-card">
                 <img src="images/human2.jpg" alt="сотрудник студии" width="270">
                 <div class="frame">
                     <h3 class="text-title">Ольга Репина</h3>
                     <p class="text">Frontend Developer</p>
                 </div>
+                </div>
             </li>
             <li class="item">
+                <div class="shadow-team-card">
                 <img src="images/human3.jpg" alt="сотрудник студии" width="270">
                 <div class="frame">
                     <h3 class="text-title">Николай Тарасов</h3>
                     <p class="text">Marketing</p>
                 </div>
+                </div>
             </li>
             <li class="item">
+                <div class="shadow-team-card">
                 <img src="images/human4.jpg" alt="сотрудник студии" width="270">
                 <div class="frame">
                     <h3 class="text-title">Михаил Ермаков</h3>
                     <p class="text">UI Designer</p>
+                </div>
                 </div>
             </li>
         </ul>
@@ -120,6 +151,56 @@
     </section>
 </main>
 
+
+<section class="section">
+    <div class="container">
+    <h2 class="title">Постоянные клиенты</h2>
+    <ul>
+        <li>
+            <div class="clients-list">
+                <svg class="clients-logo" width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#Logo"></use>
+                </svg>
+            </div>
+        </li>
+        <li>
+            <div class="clients-list">
+                <svg class="clients-logo" width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#Logo-1"></use>
+                </svg>
+            </div>
+        </li>
+        <li>
+            <div class="clients-list">
+                <svg class="clients-logo" width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#Logo-2"></use>
+                </svg>
+            </div>
+        </li>
+        <li>
+            <div class="clients-list">
+                <svg class="clients-logo" width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#Logo-3"></use>
+                </svg>
+            </div>
+        </li>
+        <li>
+            <div class="clients-list">
+                <svg class="clients-logo" width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#Logo-4"></use>
+                </svg>
+            </div>
+        </li>
+        <li>
+            <div class="clients-list">
+                <svg class="clients-logo" width="106px" height="60px">
+                    <use href="./images/symbol-defs.svg#Logo-5"></use>
+                </svg>
+            </div>
+        </li>
+    </ul>
+    </div>
+</section>
 
 <!--footer-->
     <footer class="footer">

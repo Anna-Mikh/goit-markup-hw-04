@@ -91,7 +91,7 @@ img {
     padding-bottom: 200px;
     background: #2F303A;
     background-image: 
-    
+    linear-gradient(to right, rgba(47, 48, 58, 0.4)),
     url("../images/hero.jpg");
     height: 600px;
     max-width: 1600px;
@@ -153,6 +153,11 @@ img {
 
 /*Navigatin*/
 
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
 .nav {
     display: flex;
 }
@@ -162,7 +167,7 @@ img {
     margin-left: auto;
 }
 
-.nav-secondary .item + .item {
+.nav-secondary .item+.item {
     margin-left: 50px;
 }
 
@@ -187,8 +192,7 @@ img {
 }
 
 .nav-title .link:hover,
-.nav-title .link:focus,
-.nav-title .link:active {
+.nav-title .link:focus {
     color: var(--sekondary-color);
 }
 
@@ -209,6 +213,11 @@ img {
 .nav-secondary .link:focus {
     color: var(--sekondary-color);
 }
+
+.link.current {
+    color: var(--sekondary-color);
+}
+
 
 
 /*Main*/
@@ -269,7 +278,23 @@ img {
     text-align: right;
 }
 
+.vector {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background: rgba(245, 244, 250, 1);
+    border-radius: 4px
+}
 
+.vector-svg{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-title.spetial {
+    margin-top: 30px;
+}
 
 /*Чем мы занимаемся*/
 
@@ -286,6 +311,8 @@ img {
 /*Наша команда*/
 
 .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background: #F5F4FA;
 }
 
@@ -297,6 +324,13 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.shadow-team-card {
+    box-shadow: 
+    0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .item .text-title {
@@ -320,6 +354,24 @@ img {
 
 .frame .text {
     text-align: center;
+}
+
+/*Постоянные клиенты*/
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+}
+
+.clients-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
 }
 
 /*Footer*/
@@ -422,6 +474,14 @@ img {
     margin-left: 30px;
 }
 
+.effects:hover {
+    border: 1px solid rgba(238, 238, 238, 1);
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+
 .text-title-portfolio {
     font-weight: 700;
     font-size: 18px;
@@ -436,7 +496,6 @@ img {
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--primery-text-color);
-    padding-left: 24px;
 }
 
 
