@@ -358,21 +358,44 @@ img {
 
 /*Постоянные клиенты*/
 
-.clients-list {
+.title.clients {
+    margin-bottom: 50px;
+}
+
+.client-list {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.client-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+
     width: 170px;
     height: 92px;
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
 }
 
+
+/*Не работает!!!*/
+
 .clients-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
+    fill: #AFB1B8;
 }
+
+.client-logo:hover,
+.client-logo:focus {
+    fill: #2196F3;
+}
+
+
 
 /*Footer*/
 
@@ -475,7 +498,6 @@ img {
 }
 
 .effects:hover {
-    border: 1px solid rgba(238, 238, 238, 1);
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
