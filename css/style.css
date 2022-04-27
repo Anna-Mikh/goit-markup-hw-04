@@ -356,6 +356,41 @@ img {
     text-align: center;
 }
 
+.personal-networks {
+    display: flex;
+    margin-top: 16px;
+
+}
+
+.networks-list {
+    display: block;
+    border: none;
+    width: 44px;
+    height: 44px;
+    background-color: var(--sekondary-color);
+    border-radius: 50%;
+
+   
+
+}
+
+.networks-list:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.link-icon {
+    fill: rgba(175, 177, 184, 1);
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
 /*Постоянные клиенты*/
 
 .title.clients {
@@ -366,6 +401,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .client-list:not(:last-child) {
