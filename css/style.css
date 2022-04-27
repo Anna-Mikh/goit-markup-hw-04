@@ -359,7 +359,8 @@ img {
 .personal-networks {
     display: flex;
     margin-top: 16px;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .networks-list {
@@ -380,13 +381,15 @@ img {
 
 
 .link-icon {
+    display: inline-flex;
     fill: rgba(175, 177, 184, 1);
     cursor: pointer;
     padding: 0;
     border: none;
-    justify-content: center;
-    align-items: center;
-
+    
+    background-size: contain;
+    background-position: 50% 50%;
+    
 }
 
 
