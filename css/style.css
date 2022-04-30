@@ -91,9 +91,9 @@ img {
     padding-bottom: 200px;
     background: #2F303A;
     background-image: 
-    linear-gradient(to right, rgba(47, 48, 58, 0.4)),
+    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 54, 0.4)),
     url("../images/hero.jpg");
-    height: 600px;
+    max-height: 600px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -101,26 +101,6 @@ img {
     background-repeat:no-repeat;
     background-position: center;
 }
-
-
-/*
-.hero-overlay {
-    height: 600px;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: contain;
-    background-repeat:no-repeat;
-    background-position: center;
-
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero.jpg");
-}
-*/
-
 
 .hero-title {
     font-weight: 900;
@@ -212,6 +192,22 @@ img {
 .nav-secondary .link:hover,
 .nav-secondary .link:focus {
     color: var(--sekondary-color);
+}
+
+
+
+/* Не работает!*/
+
+.nav-secondary .link::before {
+    content: "";
+    background-image: url(../images/symbol-defs.svg/envelope);
+    background-size: contain;
+}
+
+.nav-secondary .link::before {
+    content: "";
+    background-image: url(../images/symbol-defs.svg/tel);
+    background-size: contain;
 }
 
 .link.current {
@@ -371,14 +367,19 @@ img {
     background-color: var(--sekondary-color);
     border-radius: 50%;
 
-   
-
 }
 
 .networks-list:not(:last-child) {
     margin-right: 10px;
 }
 
+.networks-list a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .link-icon {
     display: inline-flex;
@@ -404,20 +405,24 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .client-list:not(:last-child) {
     margin-right: 30px;
 }
 
+.client-list a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .client-icon {
     display: block;
-    margin-left: auto;
-    margin-right: auto; 
 
-    width: 170px;
-    height: 92px;
+
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
 }
@@ -425,13 +430,14 @@ img {
 
 /*Не работает!!!*/
 
-.clients-logo {
+.clients-icon {
     fill: #AFB1B8;
 }
 
-.client-logo:hover,
-.client-logo:focus {
+.client-icon:hover,
+.client-icon:focus {
     fill: #2196F3;
+    border: var(--sekondary-color)
 }
 
 
@@ -516,15 +522,19 @@ img {
     height: 44px;
     background-color: var(--sekondary-color);
     border-radius: 50%;
-
-
-
 }
 
 .company-networks-list:not(:last-child) {
     margin-right: 10px;
 }
 
+.company-networks-list a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .company-link-icon {
     display: inline-flex;
@@ -537,7 +547,6 @@ img {
     background-position: 50% 50%;
 
 }
-
 
 
 
