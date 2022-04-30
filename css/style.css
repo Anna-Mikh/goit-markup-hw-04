@@ -491,6 +491,56 @@ img {
 }
 
 
+/*Присоединяйтесь*/ 
+.footer-tille {
+    color: var(--accent-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+
+.company-networks {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-networks-list {
+    display: block;
+    border: none;
+    width: 44px;
+    height: 44px;
+    background-color: var(--sekondary-color);
+    border-radius: 50%;
+
+
+
+}
+
+.company-networks-list:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.company-link-icon {
+    display: inline-flex;
+    fill: Solid #FFFFFF;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+
+    background-size: contain;
+    background-position: 50% 50%;
+
+}
+
+
+
+
 /*Страница Portfolio*/
 
 .button-list {
