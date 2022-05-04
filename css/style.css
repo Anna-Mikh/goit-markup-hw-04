@@ -207,6 +207,10 @@ a.link.current{
     fill: var(--sekondary-color);
 }
 
+.icon-contact-mail,
+.icon-contact-tel {
+    margin-right: 10px;
+}
 
 /*Main*/
 
@@ -492,7 +496,7 @@ a.link.current{
     text-decoration: none;
 }
 
-.address:not(:last-child) {
+.address-nav li:not(:last-child) {
     margin-bottom: 9px;
 }
 
