@@ -456,7 +456,6 @@ a.link.current{
 
 .container-logo-address {
     width: 231px;
-    height: 81px;
 }
 
 .logo-footer {
@@ -508,17 +507,12 @@ a.link.current{
 /*Присоединяйтесь*/ 
  
 .container-foter {
-    display: block;
-    margin-top: 16px;
-    justify-content: center;
-    align-items: baseline;
     margin-left: 70px;
-    margin-right: auto;
 }
 
 .oll-foter {
     display: flex;
-    flex-direction: row;
+    align-items: baseline;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -542,30 +536,29 @@ a.link.current{
 }
 
 .company-networks-list {
-    display: block;
-    border: none;
     width: 44px;
     height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
 }
 
 .company-networks-list:not(:last-child) {
     margin-right: 10px;
 }
 
-.company-networks-list a {
+.company-networks-link {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
 
-.company-networks-list:hover {
+.company-networks-link:hover {
     background-color: var(--sekondary-color)
 }
-.company-link-icon {
+.company-icon {
     display: block;
     fill: #FFFFFF;
     cursor: pointer;
@@ -597,6 +590,7 @@ a.link.current{
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.003em;
+    
     color: var(--title-text-color);
     background-color: #F5F4FA;
     cursor: pointer;
@@ -633,7 +627,6 @@ a.link.current{
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-
 .text-title-portfolio {
     font-weight: 700;
     font-size: 18px;
@@ -650,11 +643,8 @@ a.link.current{
     color: var(--primery-text-color);
 }
 
-
 .border {
     border: 1px solid #EEEEEE;
     border-top: 0;
     padding: 20px 24px;
 }
-
-
