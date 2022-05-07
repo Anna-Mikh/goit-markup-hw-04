@@ -273,15 +273,11 @@ a.link.current{
 .vector {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 120px;
     background: rgba(245, 244, 250, 1);
     border-radius: 4px;
     margin-bottom: 30px;
-}
-
-.vector-svg{
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -368,11 +364,14 @@ a.link.current{
     border-radius: 50%;
 }
 
-.networks-list-link:hover {
+.networks-list-link:hover,
+.networks-list-link:focus
+ {
     background-color: var(--sekondary-color);
 }
 
-.networks-list-link:hover .link-icon {
+.networks-list-link:hover .link-icon,
+.networks-list-link:focus .link-icon {
     fill: var(--accent-color)
 }
 
@@ -428,18 +427,19 @@ a.link.current{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(175, 177, 184, 1);
     fill: #AFB1B8;
 }
 
 .client-iton {
     display: block;
-    border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
 
 }
 
 
-.client-icon:hover {
+.client-icon:hover,
+.client-icon:focus {
     fill: #2196F3;
     border: 1px solid var(--sekondary-color)
 }
@@ -555,7 +555,8 @@ a.link.current{
     border-radius: 50%;
 }
 
-.company-networks-link:hover {
+.company-networks-link:hover,
+.company-networks-link:focus {
     background-color: var(--sekondary-color)
 }
 .company-icon {
@@ -588,6 +589,7 @@ a.link.current{
 .main-portfolio .portfolio-button {
     font-family: inherit;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.003em;
     
@@ -621,7 +623,13 @@ a.link.current{
     margin-left: 30px;
 }
 
-.effects:hover {
+.effects {
+    display: block;
+    text-decoration: none;
+}
+
+.effects:hover,
+.effects:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
